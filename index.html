@@ -22,7 +22,8 @@
         map.addLayer(data[1].layer);
 
         // Zoom and center the map
-        map.zoom(11).center(data[1].center);
+        console.log(data[1].center);
+        map.zoom(14).center({lon:-83.0657, lat: 42.4307}); // data[1].center);
 
         // Attribute map
         map.ui.attribution.add()
